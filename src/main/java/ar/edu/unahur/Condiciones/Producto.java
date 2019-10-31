@@ -1,55 +1,82 @@
 package ar.edu.unahur.Condiciones;
 
-import ar.edu.unahur.Condiciones.Categoria.Categoria;
-import ar.edu.unahur.Condiciones.Condicion.Condicion;
-
 
 public class Producto {
-    private String nombre;
+    private int id;
+    String nombre;
+    String autor;
     private float precio;
-    Categoria categoria;
-    private float costoDeEnvio;
+    String genero;
+    private boolean esNuevo;
 
-    public Producto() {
+
+    public Producto(int id, String nombre, String autor, float precio, String genero, boolean esNuevo) {
+        this.id = id;
+        this.nombre = nombre;
+        this.autor = autor;
+        this.precio = precio;
+        this.genero = genero;
+        this.esNuevo = esNuevo;
+    }
+
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getNombre() {
         return nombre;
     }
 
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getAutor() {
+        return autor;
+    }
+
+    public void setAutor(String autor) {
+        this.autor = autor;
+    }
+
     public float getPrecio() {
         return precio;
     }
 
-    public Categoria getCategoria() {
-        return categoria;
+    public void setPrecio(float precio) {
+        this.precio = precio;
     }
 
-    public float getCostoDeEnvio() {
-        return costoDeEnvio;
+    public String getGenero() {
+        return genero;
     }
 
-
-    public  String condicion(Condicion condicion) {
-        return condicion.condicion();
+    public void setGenero(String genero) {
+        this.genero = genero;
     }
 
-    public  String tipoDeEntrega() {
-         ;
+    public boolean isEsNuevo() {
+        return esNuevo;
     }
 
-    public  String tipoDePago() {
-        return costoDeEnvio;
+    public void setEsNuevo(boolean esNuevo) {
+        this.esNuevo = esNuevo;
     }
-
 
     @Override
     public String toString() {
         return "Producto{" +
-                "nombre='" + nombre + '\'' +
+                "id=" + id +
+                ", nombre='" + nombre + '\'' +
+                ", autor='" + autor + '\'' +
                 ", precio=" + precio +
-                ", categoria=" + categoria +
-                ", costoDeEnvio=" + costoDeEnvio +
+                ", genero='" + genero + '\'' +
+                ", esNuevo=" + esNuevo +
                 '}';
     }
 }
