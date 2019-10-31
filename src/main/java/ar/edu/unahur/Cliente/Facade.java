@@ -1,7 +1,6 @@
 package ar.edu.unahur.Cliente;
 
-import ar.edu.unahur.Categoria.Categoria;
-import ar.edu.unahur.Productos.Producto;
+import ar.edu.unahur.Condiciones.Categoria.Categoria;
 
 public abstract class Facade {
 

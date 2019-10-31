@@ -1,6 +1,6 @@
-package ar.edu.unahur.Categoria;
+package ar.edu.unahur.Condiciones.Categoria;
 
-import ar.edu.unahur.Productos.Producto;
+import ar.edu.unahur.Condiciones.Producto;
 
 import java.util.List;
 
@@ -9,7 +9,7 @@ public class Categoria {
     private List<Producto> productos;
 
 
-    public List  precio(float max , float min){}
+    public void  precio(float max , float min){};
 
 
     public void ordenarMayorAMenor(){}
