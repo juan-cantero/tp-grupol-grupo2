@@ -1,4 +1,4 @@
-package ar.edu.unahur.Condiciones;
+package ar.edu.unahur.facade;
 
 public class Usuario {
     int ID;
