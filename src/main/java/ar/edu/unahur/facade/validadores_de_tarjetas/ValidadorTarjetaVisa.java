@@ -1,15 +1,15 @@
 package ar.edu.unahur.facade.validadores_de_tarjetas;
 
-import ar.edu.unahur.facade.tarjetas_de_credito.Visa;
+import ar.edu.unahur.facade.tarjetas_de_credito.TarjetaDeCredito;
 
 import java.time.LocalDate;
 
 public class ValidadorTarjetaVisa {
 
-  private Visa tarjeta;
+  private TarjetaDeCredito tarjeta;
   private String ultimosTresDigitos;
 
-  public ValidadorTarjetaVisa(Visa tarjeta) {
+  public ValidadorTarjetaVisa(TarjetaDeCredito tarjeta) {
     this.tarjeta = tarjeta;
     this.ultimosTresDigitos = "";
   }

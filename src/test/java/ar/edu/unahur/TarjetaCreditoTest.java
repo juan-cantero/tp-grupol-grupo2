@@ -1,6 +1,6 @@
 package ar.edu.unahur;
 
-import ar.edu.unahur.facade.tarjetas_de_credito.Visa;
+import ar.edu.unahur.facade.tarjetas_de_credito.TarjetaDeCredito;
 import ar.edu.unahur.facade.validadores_de_tarjetas.ValidadorTarjetaVisa;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
@@ -9,13 +9,13 @@ import org.testng.annotations.Test;
 import java.time.LocalDate;
 
 public class TarjetaCreditoTest {
-  Visa tarjeta;
+  TarjetaDeCredito tarjeta;
   ValidadorTarjetaVisa validador;
 
   @BeforeTest
   public void setUp() {
     tarjeta =
-            new Visa("jose perez",
+            new TarjetaDeCredito("jose perez",
                     "Visa", "22225555644564545","567890",
                     LocalDate.of(2022,11,03));
     validador = new ValidadorTarjetaVisa(tarjeta);

@@ -1,5 +1,8 @@
 package ar.edu.unahur.facade.mockdata;
 
+
+import ar.edu.unahur.facade.productos.Producto;
+
 public class LibroMock {
   private  int id;
   private float precio;
@@ -8,6 +11,7 @@ public class LibroMock {
   private String genero;
 
   public LibroMock(int id, float precio, String nombre, String autor, String genero) {
+
     this.id = id;
     this.precio = precio;
     this.nombre = nombre;
