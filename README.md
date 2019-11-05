@@ -5,13 +5,14 @@
 
 ## Marketplace
 
-Mercado libro es un marketplace en el que se puede comprar... si muy bien adivinasté,libros!
-estas son las cosas que deberia poder hacer un cliente en el sitio:
+Mercado Libro es un _Marketplace_ en el que se puede comprar... Si, muy bien adivinaste, libros!
 
-* Ver los libros filtrados por diferentes criterios, ya sea autor, rango de precios etc.
-* Agregar libros al carrito de compras.
-* Elegir medios de pago.
-* Elegir entre diferentes tipo de envio.
-* Saber el total antes de pagar.
+En el sitio, el cliente debería ser capaz de:
+
+* Ver los libros filtrados por diferentes criterios, ya sea `autor`, `rango de precios` etc.
+* `Agregar libros` al carrito de compras.
+* Elegir `medios de pago`.
+* Elegir entre diferentes `tipo de envio`.
+* Saber el `total` antes de pagar.
 
 
