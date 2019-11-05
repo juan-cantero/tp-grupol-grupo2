@@ -27,8 +27,7 @@ public class PrecioTotalTest {
 
     carrito = new CarritoDeCompras();
 
-    pagoTarjeta = new PagoTarjeta();
-    pagoTarjeta.setCuotable(new EnTresCuotas());
+    pagoTarjeta = new PagoTarjeta(new EnTresCuotas());
 
     entrega = EntregaFactory.getTipoEntrega("domicilio");
 
