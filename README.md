@@ -1,6 +1,9 @@
 # MercadoLibro
 
-<center>https://refactoring.guru/images/patterns/content/facade/facade.png</center>
+
+
+<p><img src="https://refactoring.guru/images/patterns/content/facade/facade.png" alt="foo" title="facade" /></p>
+
 ## Marketplace
 
 `MercadoLibro` es un _Marketplace_ en el que se puede comprar... Si, muy bien adivinaste, libros!
