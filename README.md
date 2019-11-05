@@ -1,7 +1,7 @@
 # Mercado libro
 
 
-<p><img src="https://refactoring.guru/images/patterns/content/facade/facade.png" alt="foo" title="facade" /></p>
+<center><p><img src="https://refactoring.guru/images/patterns/content/facade/facade.png" alt="foo" title="facade" /></p></center>
 
 ## Marketplace
 
