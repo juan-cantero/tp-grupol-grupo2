@@ -6,7 +6,7 @@
 ## Marketplace
 
 Mercado libro es un marketplace en el que se puede comprar... si muy bien adivinasté,libros!
-esta son las cosas que deberia poder hacer un cliente en el sitio:
+estas son las cosas que deberia poder hacer un cliente en el sitio:
 
 * Ver los libros filtrados por diferentes criterios, ya sea autor, rango de precios etc.
 * Agregar libros al carrito de compras.
