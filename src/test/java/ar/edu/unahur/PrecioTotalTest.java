@@ -7,6 +7,8 @@ import ar.edu.unahur.facade.tiposDePago.PagoTarjeta;
 import ar.edu.unahur.facade.tiposDePago.cuotas.EnTresCuotas;
 import ar.edu.unahur.facade.tipos_de_entrega.Entrega;
 import ar.edu.unahur.facade.tipos_de_entrega.EntregaADomicilio;
+import ar.edu.unahur.facade.tipos_de_entrega.EntregaFactory;
+import ar.edu.unahur.facade.tipos_de_entrega.TipoDeEntrega;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -16,7 +18,7 @@ public class PrecioTotalTest {
   StockLibros stockLibros;
   CarritoDeCompras carrito;
   PagoTarjeta pagoTarjeta;
-  Entrega entrega;
+  TipoDeEntrega entrega;
 
   @BeforeTest
   public void setUp() {
@@ -28,8 +30,7 @@ public class PrecioTotalTest {
     pagoTarjeta = new PagoTarjeta();
     pagoTarjeta.setCuotable(new EnTresCuotas());
 
-    entrega = new Entrega();
-    entrega.setTipoDeEntrega(new EntregaADomicilio());
+    entrega = EntregaFactory.getTipoEntrega("domicilio");
 
     carrito.agregarProducto(stockLibros.getLibro(0));
     carrito.agregarProducto(stockLibros.getLibro(1));
